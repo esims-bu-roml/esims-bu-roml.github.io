@@ -1,0 +1,124 @@
+    body { /* code for the main area of content */
+        /* add font-family, color, background color */
+        margin: 0; 
+        background-color: #262626;
+        color: #f0eff4
+    }
+
+    main { /* main area, or body, of the webpage*/
+        /* add a background-color */
+        padding: 20px;
+        width: auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+    h1{
+        font-family: 'Fugaz One', cursive;
+    }
+    
+    h2{
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-weight: bold ;
+    }
+    
+    h3{
+        font-family: 'Montserrat', sans-serif;
+        font-weight:600 ;
+    }
+    
+    p, ul, ol {
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    header { /* add a background color */
+        height: 20px;
+        width: 100%;
+    }
+   
+   
+    footer {
+        width: 100%;
+        height: 20px;
+        padding: 10px;
+    }
+
+    #container a { /* code for links*/
+       color: #ed474a; /*add a color and font-weight property here*/
+    }
+
+    #navbar {
+        height: auto;
+        width: 100%;
+        overflow: auto;
+    }
+
+    #navbar ul {
+        display: flex;
+        flex-flow: row wrap;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        justify-content: flex-start;
+    }
+
+    #navbar li {
+        padding-top: 10px;
+        margin-right: 10px;        
+    }
+
+    #navbar li a {
+        /* add a color property, you may adjust font-weight if you like */  
+        color: #ed474a;
+        font-weight: 800;
+        text-decoration: none;
+    }
+
+    #navbar li a:hover { 
+        /* add a color property  */
+        text-decoration: underline;
+    }
+
+#navbar li a:visited { 
+        /* add a color property  */
+        color: #7B4B94;
+    }
+
+    .sidebar_element {
+        margin-right: 20px;
+    }
+
+    @media (min-width: 960px) {
+        .sidebar {
+            position: fixed;
+            top:0;
+            left: auto;
+            right: 0;
+            height: auto;
+            width: 350px;
+            padding: 71px 0px 28px 42px;
+        }
+
+        .mainContainer {
+            padding-right: 0;
+            position: relative;
+            width: auto;
+            left: 0;
+            margin-left: 0px;
+            margin-right: 350px;
+            padding: 42px;
+        }
+
+    }
+
+    @media (max-width: 959px) {
+        .sidebar {
+            margin-top: 2em;
+        }
+
+        .mainContainer {
+            position: relative;
+            padding: 0;
+        }
+
+    }
